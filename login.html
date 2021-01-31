@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>loginPage</title>
+    <link rel="stylesheet" type="text/css" href="log.css">
+    <script defer src="loginReg.js"></script>
+    <!-- <script>
+    function validate()
+    {
+        var username = document.getElementsByClassName("uname");
+        var password = document.getElementsByClassName("pass");
+
+        if(username.value =="" || password.value =="")
+        {
+            alert("Fields should not be blank!");
+            return false;
+        }
+        else
+        {
+            true;
+        }
+    }
+    </script>-->
+
+    </head>
+    <body>
+        <div id="error"></div>
+        <img src="https://www.nitt.edu/nitt.png" class="nitt">
+        <div class="login">
+            <img src="https://lh3.googleusercontent.com/proxy/9tcfYcVtPxcRUrNnWC_onkdjv4TKTd60tXoHW_VXIhrJkUr_aSKJdozvijsqvxArpqY2r-5Ig5plHEkQOvriH7Ni" class="osoc">
+            
+            
+            <form onsubmit="validate()" class="register" method="GET">
+                <h1>Create Account</h1>
+                <input id="uname" name="arrUser" type="text" placeholder="Username" required>
+                <input id="pass" type="password" placeholder="Password" required>
+                <input type="text" placeholder="Email ID" required>
+                <input type="submit" name="" value="Register">
+                <p class="message">Already have an account?<a href="#">Login</a></p>
+
+            </form>
+            
+            <form action="http://osoc.nitt.edu/" method="GET">
+                <h1>Login</h1>
+                <p>Username</p>
+                <input  type="text" name="" placeholder="Enter Username"required>
+                <p>Password</p>
+                <input  type="password" name="" placeholder="Enter Password" required>
+                <input type="submit" name="" value="Login">
+                <a href="#">Forgot password?</a><br>
+                <p class="message">Don't have a account?<a href="#">Create account</a></p>
+            </form>
+
+        </div>
+        <script src='https://code.jquery.com/jquery-3.5.1.min.js'>
+        </script>
+
+        <script>
+            $('.message a').click(function(){
+                $('form').animate({height: "toggle", opacity: "toggle"},"slow");
+            });
+        </script>
+
+    </body>
+    </html>
